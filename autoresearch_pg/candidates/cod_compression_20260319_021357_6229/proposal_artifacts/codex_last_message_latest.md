@@ -1,0 +1,5 @@
+Hypothesis: a genuinely late, progress-gated int8 QAT phase should reduce the compression family’s post-export gap by snapping only the largest block matrices onto the exact export lattice during the last ~12% of training, instead of keying off `lr_mul < 1` and turning on too early under the MLX wallclock schedule.
+
+Changed [train_gpt_mlx.py](/Users/calmdentist/Desktop/parameter-golf/autoresearch_pg/candidates/cod_compression_20260319_021357_6229/train_gpt_mlx.py#L94) and [notes.md](/Users/calmdentist/Desktop/parameter-golf/autoresearch_pg/candidates/cod_compression_20260319_021357_6229/notes.md#L5). In `train_gpt_mlx.py`, I added `INT8_QAT_*` knobs, a progress-based trigger, selection of large 2D Muon-managed matrices, and a post-step int8 roundtrip projection/logging path. Expected upside is lower `final_int8_zlib_roundtrip_exact val_bpb` with effectively unchanged bytes. Main risk is that the remaining gap may be dominated by the tied embedding or smaller tensors, and the late numpy roundtrip work could cost a few final updates.
+
+Verified with `python3 -m py_compile train_gpt_mlx.py`.

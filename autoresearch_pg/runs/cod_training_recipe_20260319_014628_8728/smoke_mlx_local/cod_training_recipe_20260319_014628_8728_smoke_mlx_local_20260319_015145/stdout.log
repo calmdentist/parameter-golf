@@ -1,0 +1,46 @@
+logs/cod_training_recipe_20260319_014628_8728_smoke_mlx_local_20260319_015145.txt
+Code size: 54176 bytes
+run_id:cod_training_recipe_20260319_014628_8728_smoke_mlx_local_20260319_015145
+mlx_version:0.31.1
+train_loader:shards pattern=/Users/calmdentist/Desktop/parameter-golf/data/datasets/fineweb10B_sp1024/fineweb_train_*.bin
+val_loader:shards pattern=/Users/calmdentist/Desktop/parameter-golf/data/datasets/fineweb10B_sp1024/fineweb_val_*.bin tokens:262144
+WARNING: train_loader:subset dataset:fineweb10B_sp1024 train_shards:1/195 new epochs will arrive sooner than the full dataset
+tokenizer_path:/Users/calmdentist/Desktop/parameter-golf/data/tokenizers/fineweb_1024_bpe.model
+model_params:17059912 vocab_size:1024 layers:9 dim:512 heads:8 kv_heads:4 seq_len:1024 tie_embeddings:True
+iterations:50 train_batch_tokens:8192 grad_accum_steps:8 microbatch_tokens:1024 microbatch_batch_size:1 val_batch_size:8192 warmup_steps:64 max_wallclock_seconds:0.000
+mlx_max_microbatch_tokens:2048
+optimizer:muon+adam muon_matrix_params:54 scalar_params:37 embed_lr:0.05 embed_lr_floor_ratio:0.05 matrix_lr:0.05 matrix_lr_floor_ratio:0.01 scalar_lr:0.04 scalar_lr_floor_ratio:0.25 muon_momentum:0.95 muon_steps:5
+train_objective:next_token+mtp mtp_loss_weight_2:0.15 mtp_loss_weight_3:0.05
+val_bpb:enabled tokenizer_kind=sentencepiece tokenizer_path=/Users/calmdentist/Desktop/parameter-golf/data/tokenizers/fineweb_1024_bpe.model
+compute_dtype:mlx.core.bfloat16 compile:True
+dtypes tok_emb:mlx.core.bfloat16 linear_weight:mlx.core.float32 skip_weights:mlx.core.float32
+warmup_step:10/64
+warmup_step:20/64
+warmup_step:30/64
+warmup_step:40/64
+warmup_step:50/64
+warmup_step:60/64
+warmup_step:64/64
+step:1/50 train_loss:6.9415 train_time:135ms step_avg:134.97ms tok_s:60702
+step:2/50 train_loss:7.0538 train_time:573ms step_avg:286.27ms tok_s:18730
+step:3/50 train_loss:6.8125 train_time:973ms step_avg:324.42ms tok_s:20449
+step:4/50 train_loss:6.5019 train_time:1374ms step_avg:343.60ms tok_s:20431
+step:5/50 train_loss:6.2662 train_time:1776ms step_avg:355.11ms tok_s:20431
+step:6/50 train_loss:6.0654 train_time:2177ms step_avg:362.85ms tok_s:20407
+step:7/50 train_loss:5.8894 train_time:2579ms step_avg:368.38ms tok_s:20409
+step:8/50 train_loss:5.9538 train_time:2982ms step_avg:372.77ms tok_s:20313
+step:9/50 train_loss:5.8933 train_time:3386ms step_avg:376.26ms tok_s:20272
+step:10/50 train_loss:5.9060 train_time:3797ms step_avg:379.70ms tok_s:19956
+step:20/50 train_loss:5.7284 train_time:7898ms step_avg:394.90ms tok_s:20308
+step:30/50 train_loss:5.5124 train_time:11976ms step_avg:399.20ms tok_s:20146
+step:40/50 train_loss:5.3484 train_time:16038ms step_avg:400.94ms tok_s:20201
+step:50/50 train_loss:5.1463 train_time:20087ms step_avg:401.74ms tok_s:20272
+step:50/50 val_loss:4.8517 val_bpb:2.8730 train_time:22855ms step_avg:457.10ms
+Traceback (most recent call last):
+  File "/Users/calmdentist/Desktop/parameter-golf/autoresearch_pg/runs/cod_training_recipe_20260319_014628_8728/smoke_mlx_local/cod_training_recipe_20260319_014628_8728_smoke_mlx_local_20260319_015145/train_gpt_mlx.py", line 1188, in <module>
+    main()
+    ~~~~^^
+  File "/Users/calmdentist/Desktop/parameter-golf/autoresearch_pg/runs/cod_training_recipe_20260319_014628_8728/smoke_mlx_local/cod_training_recipe_20260319_014628_8728_smoke_mlx_local_20260319_015145/train_gpt_mlx.py", line 1149, in main
+    mx.savez(str(out_path), **flat_state)
+    ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: std::bad_cast

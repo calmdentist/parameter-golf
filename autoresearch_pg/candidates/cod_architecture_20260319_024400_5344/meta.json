@@ -1,0 +1,21 @@
+{
+  "candidate_id": "cod_architecture_20260319_024400_5344",
+  "created_at": "2026-03-19T02:44:00.418450Z",
+  "entrypoint_filename": "train_gpt_mlx.py",
+  "env_overrides": {
+    "MLP_MULT": 1,
+    "MODEL_DIM": 576,
+    "NUM_HEADS": 9,
+    "NUM_KV_HEADS": 3,
+    "NUM_LAYERS": 6
+  },
+  "mutation_operator": "codex_proposal",
+  "parent_candidate_id": "port_architecture_20260319_023023_5357",
+  "primary_family": "architecture",
+  "promotion_history": [],
+  "secondary_tags": [
+    "codex_proposal"
+  ],
+  "source_train_gpt": "/Users/calmdentist/Desktop/parameter-golf/autoresearch_pg/candidates/port_architecture_20260319_023023_5357/train_gpt_mlx.py",
+  "status": "proposal_pending"
+}

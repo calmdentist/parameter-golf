@@ -1,0 +1,234 @@
+{
+  "candidate_dir": "autoresearch_pg/candidates/port_architecture_20260319_014604_8294",
+  "candidate_id": "port_architecture_20260319_014604_8294",
+  "command": [
+    "/Users/calmdentist/Desktop/parameter-golf/.venv_mlx313/bin/python",
+    "/Users/calmdentist/Desktop/parameter-golf/autoresearch_pg/runs/port_architecture_20260319_014604_8294/smoke_mlx_local/port_architecture_20260319_014604_8294_smoke_mlx_local_20260319_014604/train_gpt_mlx.py"
+  ],
+  "created_at": "2026-03-19T01:46:28.016299Z",
+  "entrypoint": "autoresearch_pg/candidates/port_architecture_20260319_014604_8294/train_gpt_mlx.py",
+  "env": {
+    "DATA_PATH": "/Users/calmdentist/Desktop/parameter-golf/data/datasets/fineweb10B_sp1024",
+    "ITERATIONS": "50",
+    "MAX_WALLCLOCK_SECONDS": "0",
+    "MLP_MULT": "2",
+    "MLX_MAX_MICROBATCH_TOKENS": "2048",
+    "MODEL_DIM": "448",
+    "NUM_HEADS": "7",
+    "NUM_KV_HEADS": "1",
+    "NUM_LAYERS": "8",
+    "OUT_DIR": "logs",
+    "RUN_ID": "port_architecture_20260319_014604_8294_smoke_mlx_local_20260319_014604",
+    "TOKENIZER_PATH": "/Users/calmdentist/Desktop/parameter-golf/data/tokenizers/fineweb_1024_bpe.model",
+    "TRAIN_BATCH_TOKENS": "8192",
+    "TRAIN_LOG_EVERY": "10",
+    "TRAIN_SEQ_LEN": "1024",
+    "VAL_BATCH_SIZE": "8192",
+    "VAL_LOSS_EVERY": "0",
+    "VAL_MAX_TOKENS": "262144",
+    "VOCAB_SIZE": "1024"
+  },
+  "metrics": {
+    "artifact": {
+      "bytes_total": 3673463,
+      "code_bytes": 49759,
+      "model_int8_zlib_bytes": 3623704,
+      "model_raw_bytes": 41371172
+    },
+    "dataset": {
+      "val_pattern": "/Users/calmdentist/Desktop/parameter-golf/data/datasets/fineweb10B_sp1024/fineweb_val_*.bin",
+      "val_tokens": 262144
+    },
+    "final_int8": {
+      "eval_time_ms": 1685,
+      "val_bpb": 3.2466,
+      "val_loss": 5.4826
+    },
+    "final_int8_exact": {
+      "val_bpb": 3.24664863,
+      "val_loss": 5.48258162
+    },
+    "last_train_loss": {
+      "iterations": 50,
+      "step": 50,
+      "step_avg_ms": 274.52,
+      "train_loss": 5.4641,
+      "train_time_ms": 13726
+    },
+    "last_train_val": {
+      "iterations": 50,
+      "step": 50,
+      "step_avg_ms": 311.96,
+      "train_time_ms": 15598,
+      "val_bpb": 3.2187,
+      "val_loss": 5.4353
+    },
+    "model_params": 10567480,
+    "path": "/Users/calmdentist/Desktop/parameter-golf/autoresearch_pg/runs/port_architecture_20260319_014604_8294/smoke_mlx_local/port_architecture_20260319_014604_8294_smoke_mlx_local_20260319_014604/train.log",
+    "timing": {
+      "step_avg_ms": 311.96,
+      "train_time_ms": 15598
+    },
+    "train_losses": [
+      {
+        "iterations": 50,
+        "step": 1,
+        "step_avg_ms": 101.99,
+        "train_loss": 6.9385,
+        "train_time_ms": 102
+      },
+      {
+        "iterations": 50,
+        "step": 2,
+        "step_avg_ms": 214.46,
+        "train_loss": 6.8152,
+        "train_time_ms": 429
+      },
+      {
+        "iterations": 50,
+        "step": 3,
+        "step_avg_ms": 240.07,
+        "train_loss": 6.6367,
+        "train_time_ms": 720
+      },
+      {
+        "iterations": 50,
+        "step": 4,
+        "step_avg_ms": 250.6,
+        "train_loss": 6.4612,
+        "train_time_ms": 1002
+      },
+      {
+        "iterations": 50,
+        "step": 5,
+        "step_avg_ms": 256.24,
+        "train_loss": 6.309,
+        "train_time_ms": 1281
+      },
+      {
+        "iterations": 50,
+        "step": 6,
+        "step_avg_ms": 259.7,
+        "train_loss": 6.152,
+        "train_time_ms": 1558
+      },
+      {
+        "iterations": 50,
+        "step": 7,
+        "step_avg_ms": 262.13,
+        "train_loss": 6.0028,
+        "train_time_ms": 1835
+      },
+      {
+        "iterations": 50,
+        "step": 8,
+        "step_avg_ms": 263.71,
+        "train_loss": 5.9596,
+        "train_time_ms": 2110
+      },
+      {
+        "iterations": 50,
+        "step": 9,
+        "step_avg_ms": 265.04,
+        "train_loss": 5.9245,
+        "train_time_ms": 2385
+      },
+      {
+        "iterations": 50,
+        "step": 10,
+        "step_avg_ms": 265.97,
+        "train_loss": 5.8219,
+        "train_time_ms": 2660
+      },
+      {
+        "iterations": 50,
+        "step": 20,
+        "step_avg_ms": 271.38,
+        "train_loss": 5.5934,
+        "train_time_ms": 5428
+      },
+      {
+        "iterations": 50,
+        "step": 30,
+        "step_avg_ms": 273.32,
+        "train_loss": 5.4902,
+        "train_time_ms": 8199
+      },
+      {
+        "iterations": 50,
+        "step": 40,
+        "step_avg_ms": 274.2,
+        "train_loss": 5.5122,
+        "train_time_ms": 10968
+      },
+      {
+        "iterations": 50,
+        "step": 50,
+        "step_avg_ms": 274.52,
+        "train_loss": 5.4641,
+        "train_time_ms": 13726
+      }
+    ],
+    "train_vals": [
+      {
+        "iterations": 50,
+        "step": 50,
+        "step_avg_ms": 311.96,
+        "train_time_ms": 15598,
+        "val_bpb": 3.2187,
+        "val_loss": 5.4353
+      }
+    ]
+  },
+  "mutation_operator": "arch_compact_8x448",
+  "mutation_payload": {
+    "description": "Smaller, cheaper trunk that may export more favorably under the byte cap.",
+    "env_overrides": {
+      "MLP_MULT": 2,
+      "MODEL_DIM": 448,
+      "NUM_HEADS": 7,
+      "NUM_KV_HEADS": 1,
+      "NUM_LAYERS": 8
+    },
+    "operator_type": "template",
+    "replacements": [],
+    "source_refs": [
+      "challenge_local_prior"
+    ],
+    "template_id": "arch_compact_8x448",
+    "template_type": "env_template"
+  },
+  "objective": {
+    "byte_cap": 16000000,
+    "bytes_code": 49759,
+    "bytes_model_int8_zlib": 3623704,
+    "bytes_over": 0,
+    "bytes_total": 3673463,
+    "model_params": 10567480,
+    "post_quant_val_bpb": 3.24664863,
+    "post_quant_val_loss": 5.48258162,
+    "pre_quant_val_bpb": 3.2187,
+    "pre_quant_val_loss": 5.4353,
+    "proxy_score": 3.24664863,
+    "quant_gap_bpb": 0.02794863000000003,
+    "quant_gap_loss": 0.04728162000000058,
+    "reasons": [],
+    "step_avg_ms": 311.96,
+    "train_time_ms": 15598,
+    "valid": true
+  },
+  "parent_candidate_id": null,
+  "primary_family": "architecture",
+  "return_code": 0,
+  "run_dir": "autoresearch_pg/runs/port_architecture_20260319_014604_8294/smoke_mlx_local/port_architecture_20260319_014604_8294_smoke_mlx_local_20260319_014604",
+  "run_id": "port_architecture_20260319_014604_8294_smoke_mlx_local_20260319_014604",
+  "secondary_tags": [
+    "architecture",
+    "compact",
+    "template"
+  ],
+  "stdout_log": "autoresearch_pg/runs/port_architecture_20260319_014604_8294/smoke_mlx_local/port_architecture_20260319_014604_8294_smoke_mlx_local_20260319_014604/stdout.log",
+  "template_id": "arch_compact_8x448",
+  "tier": "smoke_mlx_local",
+  "train_log": "autoresearch_pg/runs/port_architecture_20260319_014604_8294/smoke_mlx_local/port_architecture_20260319_014604_8294_smoke_mlx_local_20260319_014604/train.log"
+}

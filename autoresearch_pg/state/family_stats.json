@@ -1,30 +1,41 @@
 {
   "families": {
     "architecture": {
-      "best_score": 3.24664863,
-      "completed": 1,
-      "duplicates_skipped": 0,
+      "best_score": 3.24020662,
+      "completed": 6,
+      "duplicates_skipped": 5,
       "invalid": 0,
-      "last_score": 3.24664863,
+      "last_score": 3.24020662,
       "recent_scores": [
-        3.24664863
+        3.24664863,
+        3.24603899,
+        3.2461878,
+        3.24045934,
+        3.24180117,
+        3.24020662
       ],
-      "scheduled": 1,
-      "valid": 1,
-      "wins": 1
+      "scheduled": 6,
+      "valid": 6,
+      "wins": 4
     },
     "compression": {
       "best_score": 3.04557018,
-      "completed": 2,
-      "duplicates_skipped": 0,
+      "completed": 8,
+      "duplicates_skipped": 2,
       "invalid": 0,
-      "last_score": 3.04557018,
+      "last_score": 3.2440943,
       "recent_scores": [
         3.23747214,
-        3.04557018
+        3.04557018,
+        3.24709054,
+        3.24400253,
+        3.23742667,
+        3.24517691,
+        3.24387405,
+        3.2440943
       ],
-      "scheduled": 2,
-      "valid": 2,
+      "scheduled": 8,
+      "valid": 8,
       "wins": 2
     },
     "eval_time": {
@@ -61,27 +72,27 @@
       "wins": 0
     },
     "training_recipe": {
-      "best_score": 2.83995742,
-      "completed": 12,
-      "duplicates_skipped": 0,
-      "invalid": 0,
-      "last_score": 3.1897757,
+      "best_score": 2.83917722,
+      "completed": 29,
+      "duplicates_skipped": 9,
+      "invalid": 1,
+      "last_score": 2.84704437,
       "recent_scores": [
-        2.94950442,
-        2.94900999,
-        2.88946131,
-        2.85863372,
-        2.84089884,
-        3.04638341,
-        3.04063857,
-        3.06682539,
-        2.83995742,
-        3.1897757
+        2.84004919,
+        2.83995685,
+        2.83917722,
+        3.19026223,
+        2.9437401,
+        2.9179085,
+        3.22210155,
+        2.83933563,
+        2.84030417,
+        2.84704437
       ],
-      "scheduled": 12,
-      "valid": 12,
-      "wins": 8
+      "scheduled": 29,
+      "valid": 28,
+      "wins": 10
     }
   },
-  "last_updated": "2026-03-19T01:46:28.024943Z"
+  "last_updated": "2026-03-19T02:44:00.414398Z"
 }

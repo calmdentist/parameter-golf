@@ -1,0 +1,67 @@
+{
+  "candidate_id": "cod_compression_20260319_021357_6229",
+  "config_hash": "c422eb7f02294a716263d3d6f2da681d77ee72629aff3e91500466d63f335e79",
+  "created_at": "2026-03-19T02:13:57.111065Z",
+  "entrypoint_filename": "train_gpt_mlx.py",
+  "entrypoint_hash": "338a21c6f16e236b605e617cf7038d9781005e5c41ad63250ba017f498a05aaa",
+  "env_overrides": {},
+  "env_overrides_hash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+  "mutation_hash": "d745a51c03a059a823cb7855aa16c23e1d7f33ff4a9c71ba878ad3142cf9c682",
+  "mutation_operator": "codex_proposal",
+  "mutation_payload": {
+    "artifacts": {
+      "context_latest_path": "/Users/calmdentist/Desktop/parameter-golf/autoresearch_pg/candidates/cod_compression_20260319_021357_6229/proposal_artifacts/codex_context_latest.json",
+      "context_path": "/Users/calmdentist/Desktop/parameter-golf/autoresearch_pg/candidates/cod_compression_20260319_021357_6229/proposal_artifacts/codex_context_20260319_021357.json",
+      "engine": "codex",
+      "last_message_latest_path": "/Users/calmdentist/Desktop/parameter-golf/autoresearch_pg/candidates/cod_compression_20260319_021357_6229/proposal_artifacts/codex_last_message_latest.md",
+      "last_message_path": "/Users/calmdentist/Desktop/parameter-golf/autoresearch_pg/candidates/cod_compression_20260319_021357_6229/proposal_artifacts/codex_last_message_20260319_021357.md",
+      "model": "gpt-5.4",
+      "prompt_latest_path": "/Users/calmdentist/Desktop/parameter-golf/autoresearch_pg/candidates/cod_compression_20260319_021357_6229/proposal_artifacts/codex_prompt_latest.md",
+      "prompt_path": "/Users/calmdentist/Desktop/parameter-golf/autoresearch_pg/candidates/cod_compression_20260319_021357_6229/proposal_artifacts/codex_prompt_20260319_021357.md",
+      "reasoning_effort": "xhigh",
+      "return_code": 0,
+      "stdout_latest_path": "/Users/calmdentist/Desktop/parameter-golf/autoresearch_pg/candidates/cod_compression_20260319_021357_6229/proposal_artifacts/codex_exec_latest.jsonl",
+      "stdout_path": "/Users/calmdentist/Desktop/parameter-golf/autoresearch_pg/candidates/cod_compression_20260319_021357_6229/proposal_artifacts/codex_exec_20260319_021357.jsonl"
+    },
+    "changed_entrypoint": true,
+    "model": "gpt-5.4",
+    "operator_type": "codex_proposal",
+    "parent_candidate_id": null,
+    "proposal_engine": "codex",
+    "proposal_mode": "deep",
+    "proposal_mode_reasons": [
+      "compression defaults to deep mode",
+      "no parent candidate selected"
+    ],
+    "reasoning_effort": "xhigh"
+  },
+  "parent_candidate_id": null,
+  "primary_family": "compression",
+  "promotion_history": [],
+  "proposal_artifacts": {
+    "context_latest_path": "/Users/calmdentist/Desktop/parameter-golf/autoresearch_pg/candidates/cod_compression_20260319_021357_6229/proposal_artifacts/codex_context_latest.json",
+    "context_path": "/Users/calmdentist/Desktop/parameter-golf/autoresearch_pg/candidates/cod_compression_20260319_021357_6229/proposal_artifacts/codex_context_20260319_021357.json",
+    "engine": "codex",
+    "last_message_latest_path": "/Users/calmdentist/Desktop/parameter-golf/autoresearch_pg/candidates/cod_compression_20260319_021357_6229/proposal_artifacts/codex_last_message_latest.md",
+    "last_message_path": "/Users/calmdentist/Desktop/parameter-golf/autoresearch_pg/candidates/cod_compression_20260319_021357_6229/proposal_artifacts/codex_last_message_20260319_021357.md",
+    "model": "gpt-5.4",
+    "prompt_latest_path": "/Users/calmdentist/Desktop/parameter-golf/autoresearch_pg/candidates/cod_compression_20260319_021357_6229/proposal_artifacts/codex_prompt_latest.md",
+    "prompt_path": "/Users/calmdentist/Desktop/parameter-golf/autoresearch_pg/candidates/cod_compression_20260319_021357_6229/proposal_artifacts/codex_prompt_20260319_021357.md",
+    "reasoning_effort": "xhigh",
+    "return_code": 0,
+    "stdout_latest_path": "/Users/calmdentist/Desktop/parameter-golf/autoresearch_pg/candidates/cod_compression_20260319_021357_6229/proposal_artifacts/codex_exec_latest.jsonl",
+    "stdout_path": "/Users/calmdentist/Desktop/parameter-golf/autoresearch_pg/candidates/cod_compression_20260319_021357_6229/proposal_artifacts/codex_exec_20260319_021357.jsonl"
+  },
+  "proposal_changed_entrypoint": true,
+  "proposal_engine": "codex",
+  "proposal_mode": "deep",
+  "proposal_mode_reasons": [
+    "compression defaults to deep mode",
+    "no parent candidate selected"
+  ],
+  "secondary_tags": [
+    "codex_proposal"
+  ],
+  "source_train_gpt": "/Users/calmdentist/Desktop/parameter-golf/train_gpt_mlx.py",
+  "status": "proposed"
+}

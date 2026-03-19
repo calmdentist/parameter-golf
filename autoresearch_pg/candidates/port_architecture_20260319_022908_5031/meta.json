@@ -1,0 +1,30 @@
+{
+  "candidate_id": "port_architecture_20260319_022908_5031",
+  "config_hash": "ffc13b136bcbef73cc4ac1c7aa73990d46ee6338ec6c4876b0909f492a03963b",
+  "created_at": "2026-03-19T02:29:08.729696Z",
+  "entrypoint_filename": "train_gpt_mlx.py",
+  "entrypoint_hash": "d8d8501c00c14ddbb3e79199ef308e8496ea1ac38bf56b3729852a5679e000aa",
+  "env_overrides": {
+    "MLP_MULT": 2,
+    "MODEL_DIM": 576,
+    "NUM_HEADS": 9,
+    "NUM_KV_HEADS": 3,
+    "NUM_LAYERS": 10
+  },
+  "env_overrides_hash": "f35c1be4fa653fa0dec1c628dfaa8ef60b114aae348b8f49e116b623439fc4b5",
+  "mutation_hash": "583b8e7e5e561e31aad9d762a61c7dcdc305fc68e9e52f0cb17e39ee4ca39a1b",
+  "mutation_operator": "mlp_sweep",
+  "mutation_payload": {
+    "env_overrides": {
+      "MLP_MULT": 2
+    },
+    "operator_type": "env_choice"
+  },
+  "parent_candidate_id": "port_architecture_20260319_022832_5187",
+  "primary_family": "architecture",
+  "promotion_history": [],
+  "secondary_tags": [],
+  "source_train_gpt": "/Users/calmdentist/Desktop/parameter-golf/autoresearch_pg/candidates/port_architecture_20260319_022832_5187/train_gpt_mlx.py",
+  "status": "planned",
+  "template_id": null
+}

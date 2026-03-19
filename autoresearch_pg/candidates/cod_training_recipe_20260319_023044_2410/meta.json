@@ -1,0 +1,70 @@
+{
+  "candidate_id": "cod_training_recipe_20260319_023044_2410",
+  "config_hash": "df8e12431226b87fe6f752f3c96ce6c73c7294de2e8e2cd3cb0e26c949fbfc10",
+  "created_at": "2026-03-19T02:30:44.865805Z",
+  "entrypoint_filename": "train_gpt_mlx.py",
+  "entrypoint_hash": "fadc5cf9590d6ff5fc7c4442b84fcd6cd7e4cf4e7cf1c6fdef0bb5398d3bfa05",
+  "env_overrides": {
+    "MATRIX_LR": 0.05,
+    "SCALAR_LR": 0.04,
+    "WARMDOWN_ITERS": 256,
+    "WARMUP_STEPS": 64
+  },
+  "env_overrides_hash": "966ac245f1b58e5cff2a4744f8d0ea9af1c68b355596253006bc0c1f323d1410",
+  "mutation_hash": "2da537a55d31c0859a9cd033d7afcc9d011e331c6ffca813addb1a609c47269b",
+  "mutation_operator": "codex_proposal",
+  "mutation_payload": {
+    "artifacts": {
+      "context_latest_path": "/Users/calmdentist/Desktop/parameter-golf/autoresearch_pg/candidates/cod_training_recipe_20260319_023044_2410/proposal_artifacts/codex_context_latest.json",
+      "context_path": "/Users/calmdentist/Desktop/parameter-golf/autoresearch_pg/candidates/cod_training_recipe_20260319_023044_2410/proposal_artifacts/codex_context_20260319_023044.json",
+      "engine": "codex",
+      "last_message_latest_path": "/Users/calmdentist/Desktop/parameter-golf/autoresearch_pg/candidates/cod_training_recipe_20260319_023044_2410/proposal_artifacts/codex_last_message_latest.md",
+      "last_message_path": "/Users/calmdentist/Desktop/parameter-golf/autoresearch_pg/candidates/cod_training_recipe_20260319_023044_2410/proposal_artifacts/codex_last_message_20260319_023044.md",
+      "model": "gpt-5.4",
+      "prompt_latest_path": "/Users/calmdentist/Desktop/parameter-golf/autoresearch_pg/candidates/cod_training_recipe_20260319_023044_2410/proposal_artifacts/codex_prompt_latest.md",
+      "prompt_path": "/Users/calmdentist/Desktop/parameter-golf/autoresearch_pg/candidates/cod_training_recipe_20260319_023044_2410/proposal_artifacts/codex_prompt_20260319_023044.md",
+      "reasoning_effort": "xhigh",
+      "return_code": 0,
+      "stdout_latest_path": "/Users/calmdentist/Desktop/parameter-golf/autoresearch_pg/candidates/cod_training_recipe_20260319_023044_2410/proposal_artifacts/codex_exec_latest.jsonl",
+      "stdout_path": "/Users/calmdentist/Desktop/parameter-golf/autoresearch_pg/candidates/cod_training_recipe_20260319_023044_2410/proposal_artifacts/codex_exec_20260319_023044.jsonl"
+    },
+    "changed_entrypoint": true,
+    "model": "gpt-5.4",
+    "operator_type": "codex_proposal",
+    "parent_candidate_id": "rep_cod_training_recipe_20260318_235033_8561_20260319_021109_9967",
+    "proposal_engine": "codex",
+    "proposal_mode": "deep",
+    "proposal_mode_reasons": [
+      "top same-tier family contenders are within 0.0030 BPB"
+    ],
+    "reasoning_effort": "xhigh"
+  },
+  "parent_candidate_id": "rep_cod_training_recipe_20260318_235033_8561_20260319_021109_9967",
+  "primary_family": "training_recipe",
+  "promotion_history": [],
+  "proposal_artifacts": {
+    "context_latest_path": "/Users/calmdentist/Desktop/parameter-golf/autoresearch_pg/candidates/cod_training_recipe_20260319_023044_2410/proposal_artifacts/codex_context_latest.json",
+    "context_path": "/Users/calmdentist/Desktop/parameter-golf/autoresearch_pg/candidates/cod_training_recipe_20260319_023044_2410/proposal_artifacts/codex_context_20260319_023044.json",
+    "engine": "codex",
+    "last_message_latest_path": "/Users/calmdentist/Desktop/parameter-golf/autoresearch_pg/candidates/cod_training_recipe_20260319_023044_2410/proposal_artifacts/codex_last_message_latest.md",
+    "last_message_path": "/Users/calmdentist/Desktop/parameter-golf/autoresearch_pg/candidates/cod_training_recipe_20260319_023044_2410/proposal_artifacts/codex_last_message_20260319_023044.md",
+    "model": "gpt-5.4",
+    "prompt_latest_path": "/Users/calmdentist/Desktop/parameter-golf/autoresearch_pg/candidates/cod_training_recipe_20260319_023044_2410/proposal_artifacts/codex_prompt_latest.md",
+    "prompt_path": "/Users/calmdentist/Desktop/parameter-golf/autoresearch_pg/candidates/cod_training_recipe_20260319_023044_2410/proposal_artifacts/codex_prompt_20260319_023044.md",
+    "reasoning_effort": "xhigh",
+    "return_code": 0,
+    "stdout_latest_path": "/Users/calmdentist/Desktop/parameter-golf/autoresearch_pg/candidates/cod_training_recipe_20260319_023044_2410/proposal_artifacts/codex_exec_latest.jsonl",
+    "stdout_path": "/Users/calmdentist/Desktop/parameter-golf/autoresearch_pg/candidates/cod_training_recipe_20260319_023044_2410/proposal_artifacts/codex_exec_20260319_023044.jsonl"
+  },
+  "proposal_changed_entrypoint": true,
+  "proposal_engine": "codex",
+  "proposal_mode": "deep",
+  "proposal_mode_reasons": [
+    "top same-tier family contenders are within 0.0030 BPB"
+  ],
+  "secondary_tags": [
+    "codex_proposal"
+  ],
+  "source_train_gpt": "/Users/calmdentist/Desktop/parameter-golf/autoresearch_pg/candidates/rep_cod_training_recipe_20260318_235033_8561_20260319_021109_9967/train_gpt_mlx.py",
+  "status": "proposed"
+}

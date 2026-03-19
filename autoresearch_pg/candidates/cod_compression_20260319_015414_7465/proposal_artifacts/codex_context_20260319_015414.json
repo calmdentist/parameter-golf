@@ -1,0 +1,305 @@
+{
+  "base": {
+    "inherited_env_overrides": {},
+    "parent_candidate_id": null
+  },
+  "family": {
+    "description": "Near-term proxy family for export-sensitive knobs until dedicated quantization patches land.",
+    "focus_areas": [
+      "export sensitivity",
+      "post-quant gap reduction",
+      "artifact-byte awareness"
+    ],
+    "name": "compression",
+    "stats": {
+      "best_score": 3.04557018,
+      "completed": 2,
+      "duplicates_skipped": 0,
+      "invalid": 0,
+      "last_score": 3.04557018,
+      "recent_scores": [
+        3.23747214,
+        3.04557018
+      ],
+      "scheduled": 2,
+      "valid": 2,
+      "wins": 2
+    }
+  },
+  "family_frontier": {
+    "family_best": {
+      "bytes_total": 5972859,
+      "candidate_id": "rec_validate_compression_recipe_warmdown",
+      "mutation_operator": "recombine",
+      "parent_candidate_id": "port_compression_20260318_210204_9293",
+      "post_quant_val_bpb": 3.04557018,
+      "pre_quant_val_bpb": 3.0274,
+      "proxy_score": 3.04557018,
+      "quant_gap_bpb": 0.018170179999999814,
+      "tier": "smoke_mlx_local",
+      "valid": true
+    },
+    "recent_family_failures": [],
+    "recent_family_runs": [
+      {
+        "bytes_total": 5972859,
+        "candidate_id": "rec_validate_compression_recipe_warmdown",
+        "mutation_operator": "recombine",
+        "parent_candidate_id": "port_compression_20260318_210204_9293",
+        "post_quant_val_bpb": 3.04557018,
+        "pre_quant_val_bpb": 3.0274,
+        "proxy_score": 3.04557018,
+        "quant_gap_bpb": 0.018170179999999814,
+        "step_avg_ms": 463.57,
+        "tier": "smoke_mlx_local",
+        "valid": true
+      },
+      {
+        "bytes_total": 5162359,
+        "candidate_id": "port_compression_20260318_210204_9293",
+        "mutation_operator": "logit_softcap_sweep",
+        "post_quant_val_bpb": 3.23747214,
+        "pre_quant_val_bpb": 3.2082,
+        "proxy_score": 3.23747214,
+        "quant_gap_bpb": 0.02927213999999978,
+        "step_avg_ms": 463.5,
+        "tier": "smoke_mlx_local",
+        "valid": true
+      }
+    ],
+    "recent_same_tier_valid_runs": [
+      {
+        "bytes_total": 5972859,
+        "candidate_id": "rec_validate_compression_recipe_warmdown",
+        "mutation_operator": "recombine",
+        "parent_candidate_id": "port_compression_20260318_210204_9293",
+        "post_quant_val_bpb": 3.04557018,
+        "pre_quant_val_bpb": 3.0274,
+        "proxy_score": 3.04557018,
+        "quant_gap_bpb": 0.018170179999999814,
+        "step_avg_ms": 463.57,
+        "tier": "smoke_mlx_local",
+        "valid": true
+      },
+      {
+        "bytes_total": 5162359,
+        "candidate_id": "port_compression_20260318_210204_9293",
+        "mutation_operator": "logit_softcap_sweep",
+        "post_quant_val_bpb": 3.23747214,
+        "pre_quant_val_bpb": 3.2082,
+        "proxy_score": 3.23747214,
+        "quant_gap_bpb": 0.02927213999999978,
+        "step_avg_ms": 463.5,
+        "tier": "smoke_mlx_local",
+        "valid": true
+      }
+    ],
+    "same_tier_family_best": {
+      "bytes_total": 5972859,
+      "candidate_id": "rec_validate_compression_recipe_warmdown",
+      "mutation_operator": "recombine",
+      "parent_candidate_id": "port_compression_20260318_210204_9293",
+      "post_quant_val_bpb": 3.04557018,
+      "pre_quant_val_bpb": 3.0274,
+      "proxy_score": 3.04557018,
+      "quant_gap_bpb": 0.018170179999999814,
+      "step_avg_ms": 463.57,
+      "tier": "smoke_mlx_local",
+      "valid": true
+    }
+  },
+  "global_frontier": {
+    "best_low_quant_gap": {
+      "bytes_total": 6476137,
+      "candidate_id": "rep_cod_training_recipe_20260318_235033_8561_20260319_015231_7617",
+      "mutation_operator": "replicate",
+      "parent_candidate_id": "cod_training_recipe_20260318_235033_8561",
+      "post_quant_val_bpb": 2.83985068,
+      "pre_quant_val_bpb": 2.8354,
+      "proxy_score": 2.83985068,
+      "quant_gap_bpb": 0.004450680000000151,
+      "tier": "smoke_mlx_local",
+      "valid": true
+    },
+    "best_with_byte_headroom": {
+      "bytes_total": 3673463,
+      "candidate_id": "port_architecture_20260319_014604_8294",
+      "mutation_operator": "arch_compact_8x448",
+      "post_quant_val_bpb": 3.24664863,
+      "pre_quant_val_bpb": 3.2187,
+      "proxy_score": 3.24664863,
+      "quant_gap_bpb": 0.02794863000000003,
+      "template_id": "arch_compact_8x448",
+      "tier": "smoke_mlx_local",
+      "valid": true
+    },
+    "champion_set": [
+      {
+        "bytes_total": 15863489,
+        "candidate_id": "first_candidate",
+        "post_quant_val_bpb": 1.2243657,
+        "proxy_score": 1.2243657,
+        "tier": "smoke_local",
+        "valid": true
+      },
+      {
+        "bytes_total": 3673463,
+        "candidate_id": "port_architecture_20260319_014604_8294",
+        "mutation_operator": "arch_compact_8x448",
+        "post_quant_val_bpb": 3.24664863,
+        "pre_quant_val_bpb": 3.2187,
+        "proxy_score": 3.24664863,
+        "quant_gap_bpb": 0.02794863000000003,
+        "template_id": "arch_compact_8x448",
+        "tier": "smoke_mlx_local",
+        "valid": true
+      },
+      {
+        "bytes_total": 5972859,
+        "candidate_id": "rec_validate_compression_recipe_warmdown",
+        "mutation_operator": "recombine",
+        "parent_candidate_id": "port_compression_20260318_210204_9293",
+        "post_quant_val_bpb": 3.04557018,
+        "pre_quant_val_bpb": 3.0274,
+        "proxy_score": 3.04557018,
+        "quant_gap_bpb": 0.018170179999999814,
+        "tier": "smoke_mlx_local",
+        "valid": true
+      },
+      {
+        "bytes_total": 6476137,
+        "candidate_id": "rep_cod_training_recipe_20260318_235033_8561_20260319_015231_7617",
+        "mutation_operator": "replicate",
+        "parent_candidate_id": "cod_training_recipe_20260318_235033_8561",
+        "post_quant_val_bpb": 2.83985068,
+        "pre_quant_val_bpb": 2.8354,
+        "proxy_score": 2.83985068,
+        "quant_gap_bpb": 0.004450680000000151,
+        "tier": "smoke_mlx_local",
+        "valid": true
+      }
+    ],
+    "global_best": {
+      "bytes_total": 15863489,
+      "candidate_id": "first_candidate",
+      "post_quant_val_bpb": 1.2243657,
+      "proxy_score": 1.2243657,
+      "tier": "smoke_local",
+      "valid": true
+    },
+    "same_tier_best": {
+      "bytes_total": 6476137,
+      "candidate_id": "rep_cod_training_recipe_20260318_235033_8561_20260319_015231_7617",
+      "post_quant_val_bpb": 2.83985068,
+      "proxy_score": 2.83985068,
+      "tier": "smoke_mlx_local",
+      "valid": true
+    }
+  },
+  "objective": {
+    "allowed_files": [
+      "train_gpt.py",
+      "train_gpt_mlx.py",
+      "notes.md"
+    ],
+    "byte_cap": 16000000,
+    "entrypoint_filename": "train_gpt_mlx.py",
+    "starter_idea_prompt_limit": 3,
+    "tier": "smoke_mlx_local"
+  },
+  "observations": [
+    "compression family best still has a material quant gap (0.018170 BPB). Export-aware changes remain valuable.",
+    "Use same-tier results as the main local compass. Current tier best is rep_cod_training_recipe_20260318_235033_8561_20260319_015231_7617 at proxy_score=2.83985068.",
+    "Best low-quant-gap candidate currently comes from training_recipe. Borrow export-stable habits if relevant."
+  ],
+  "parent_context": {
+    "best_run": null,
+    "diff_excerpt": "no parent candidate",
+    "note_sections": {},
+    "proposal_summary": "none",
+    "summary": null
+  },
+  "proposal": {
+    "ambiguity_competitors": [
+      {
+        "bytes_total": 5972859,
+        "candidate_id": "rec_validate_compression_recipe_warmdown",
+        "mutation_operator": "recombine",
+        "parent_candidate_id": "port_compression_20260318_210204_9293",
+        "post_quant_val_bpb": 3.04557018,
+        "pre_quant_val_bpb": 3.0274,
+        "proxy_score": 3.04557018,
+        "quant_gap_bpb": 0.018170179999999814,
+        "step_avg_ms": 463.57,
+        "tier": "smoke_mlx_local",
+        "valid": true
+      },
+      {
+        "bytes_total": 5162359,
+        "candidate_id": "port_compression_20260318_210204_9293",
+        "mutation_operator": "logit_softcap_sweep",
+        "post_quant_val_bpb": 3.23747214,
+        "pre_quant_val_bpb": 3.2082,
+        "proxy_score": 3.23747214,
+        "quant_gap_bpb": 0.02927213999999978,
+        "step_avg_ms": 463.5,
+        "tier": "smoke_mlx_local",
+        "valid": true
+      }
+    ],
+    "mode": "deep",
+    "reasons": [
+      "compression defaults to deep mode",
+      "no parent candidate selected"
+    ]
+  },
+  "starter_ideas": [
+    {
+      "family_match_rank": 0,
+      "horizon": "near_term",
+      "idea_id": "staged_qat_large_matrices",
+      "implementation_sketch": "Start with the existing int8 per-row export path as a differentiable or straight-through approximation. Apply it every N steps late in training, then optionally explore 4-bit groupwise variants once the int8-aware version is stable.",
+      "primary_family": "compression",
+      "priority": 1,
+      "risk": "medium",
+      "secondary_families": [
+        "training_recipe"
+      ],
+      "source_refs": [
+        "https://arxiv.org/abs/2402.17764",
+        "https://arxiv.org/abs/2406.09904"
+      ],
+      "summary": "During the last 10-15% of training, periodically fake-quantize only the large 2D block matrices while keeping small control tensors in higher precision.",
+      "tags": [
+        "quantization_aware",
+        "post_quant_gap",
+        "selective_precision"
+      ],
+      "title": "Staged fake-quant final phase",
+      "why_it_fits": "The current baseline loses meaningful score at roundtrip export, so export-aware training is one of the cleanest ways to improve the true objective."
+    },
+    {
+      "family_match_rank": 0,
+      "horizon": "moonshot",
+      "idea_id": "aqlm_style_codebook_mlp",
+      "implementation_sketch": "Start with MLP matrices only. Replace full tensors with codebook indices plus a small shared codebook, optionally with a low-rank residual. First try post-training codebooks, then move to jointly learned codebooks if the export path stays stable.",
+      "primary_family": "compression",
+      "priority": 2,
+      "risk": "high",
+      "secondary_families": [
+        "architecture"
+      ],
+      "source_refs": [
+        "https://arxiv.org/abs/2401.06118"
+      ],
+      "summary": "Treat the largest MLP matrices as additive-codebook or prototype-compressed weights so artifact bytes fall faster than with naive int8 per-row quantization.",
+      "tags": [
+        "codebook_quantization",
+        "extreme_compression",
+        "mlp_heavy"
+      ],
+      "title": "AQLM-style codebook MLP compression",
+      "why_it_fits": "Most of the baseline parameter mass sits in large matrices, especially MLPs. Extreme-compression methods target exactly that regime."
+    }
+  ]
+}

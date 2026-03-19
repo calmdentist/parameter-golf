@@ -1,0 +1,46 @@
+{
+  "candidate_id": "port_architecture_20260319_022832_5187",
+  "config_hash": "9d01728db0a94cf43e2cb1faa56f010bab1d5dda149e0cbf46774481ac1c74bf",
+  "created_at": "2026-03-19T02:28:32.116082Z",
+  "entrypoint_filename": "train_gpt_mlx.py",
+  "entrypoint_hash": "d8d8501c00c14ddbb3e79199ef308e8496ea1ac38bf56b3729852a5679e000aa",
+  "env_overrides": {
+    "MLP_MULT": 1,
+    "MODEL_DIM": 576,
+    "NUM_HEADS": 9,
+    "NUM_KV_HEADS": 3,
+    "NUM_LAYERS": 10
+  },
+  "env_overrides_hash": "747654c86cd9b0f243ae807bbc93fc0bbf00ec5ddfe6fb691c4618f491f4a1fe",
+  "mutation_hash": "1fe36522600aff5c551e1d6a28eb8fadfd1d6a77ffbc6060e92b3531ca74d755",
+  "mutation_operator": "arch_slim_10x576_mlp1",
+  "mutation_payload": {
+    "description": "Slightly deeper but slimmer architecture with reduced MLP cost.",
+    "env_overrides": {
+      "MLP_MULT": 1,
+      "MODEL_DIM": 576,
+      "NUM_HEADS": 9,
+      "NUM_KV_HEADS": 3,
+      "NUM_LAYERS": 10
+    },
+    "operator_type": "template",
+    "replacements": [],
+    "source_refs": [
+      "challenge_local_prior",
+      "https://arxiv.org/abs/1909.11942"
+    ],
+    "template_id": "arch_slim_10x576_mlp1",
+    "template_type": "env_template"
+  },
+  "parent_candidate_id": "port_architecture_20260319_020016_7076",
+  "primary_family": "architecture",
+  "promotion_history": [],
+  "secondary_tags": [
+    "architecture",
+    "factorization_adjacent",
+    "template"
+  ],
+  "source_train_gpt": "/Users/calmdentist/Desktop/parameter-golf/autoresearch_pg/candidates/port_architecture_20260319_020016_7076/train_gpt_mlx.py",
+  "status": "planned",
+  "template_id": "arch_slim_10x576_mlp1"
+}

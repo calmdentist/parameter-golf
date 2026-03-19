@@ -1,0 +1,30 @@
+{
+  "candidate_id": "port_training_recipe_20260319_022239_9771",
+  "config_hash": "2fca842b000ff2d13e01053e28ec7028b2e8f168864bee7f20b2d47b44011966",
+  "created_at": "2026-03-19T02:22:39.916297Z",
+  "entrypoint_filename": "train_gpt_mlx.py",
+  "entrypoint_hash": "13e1af135aa6eaa18a679b8d8b4f85ee2e486f4010a7f3b180d817cd8aec2530",
+  "env_overrides": {
+    "MATRIX_LR": 0.05,
+    "SCALAR_LR": 0.04,
+    "TIED_EMBED_LR": 0.1,
+    "WARMDOWN_ITERS": 256,
+    "WARMUP_STEPS": 64
+  },
+  "env_overrides_hash": "d5bc4257000d30716c97d87bb9779ba6a5637a2b2071a467494343a976af48ac",
+  "mutation_hash": "b45540ff75076a3ceffc42f0935d99c0995bfe4088dbab5788aea31bbe8f89b7",
+  "mutation_operator": "embed_lr_sweep",
+  "mutation_payload": {
+    "env_overrides": {
+      "TIED_EMBED_LR": 0.1
+    },
+    "operator_type": "env_choice"
+  },
+  "parent_candidate_id": "rep_cod_training_recipe_20260318_235033_8561_20260319_021109_9967",
+  "primary_family": "training_recipe",
+  "promotion_history": [],
+  "secondary_tags": [],
+  "source_train_gpt": "/Users/calmdentist/Desktop/parameter-golf/autoresearch_pg/candidates/rep_cod_training_recipe_20260318_235033_8561_20260319_021109_9967/train_gpt_mlx.py",
+  "status": "planned",
+  "template_id": null
+}
